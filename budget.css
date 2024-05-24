@@ -198,12 +198,15 @@ body {
     margin: 60px auto;
 }
 
-.income{
+.income {
     float: left;
     width: 475px;
     margin-right: 50px;
+  
+
 }
-.expenses__list{
+
+.expenses__list {
     float: right;
     width: 475px;
 }
@@ -224,8 +227,10 @@ h2 {
     color: #28B9B5;
 }
 
-.expenses__title,.item__value, .item__delete--btn {
-    color:#FF5049;
+.expenses__title,
+.item__value,
+.item__delete--btn {
+    color: #FF5049;
 }
 
 .item {
@@ -323,4 +328,18 @@ h2 {
 
 .unpaid:hover .item__description {
     font-weight: 900;
+}
+
+@media (max-width: 630px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .income,
+    .expenses {
+        width: 100%;
+        margin: 0 auto 15px;
+        background-color: #FF5049;
+    }
 }
